@@ -1,0 +1,95 @@
+  *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            /* overflow: hidden; */
+            background-image: url("https://images.unsplash.com/photo-1559666126-84f389727b9a?q=80&w=1177&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-position: center;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            /* background-color: red; */
+            width: 90vw;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .imgContainer{
+            /* background-color: yellow; */
+            position: relative;
+            border-radius: 1rem;
+            width: 2rem;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+            margin: 0.2rem;
+            overflow: hidden;
+            transition: all ease-in-out 500ms ;
+            cursor: pointer;
+        }
+        .wfull{
+            width: 80%;
+            height: 100%;
+            transition: all ease-in 500ms ;
+        }
+        .point-container{
+            display: flex;
+            justify-content: space-around;
+            width: 100px;
+            margin-bottom: 2rem;
+            
+        }
+        .point{
+            background-color: black;
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+            transition: all ease-in-out 500ms ;
+
+        }
+        .bg-white{
+            background-color: white;
+            width: 2rem;
+            border-radius: 5px;
+            transition: all ease-in-out 500ms ;
+
+        }
+
+        .img-name{
+            font-family: sans-serif;
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            bottom: 2rem;
+            left: 1rem;
+            font-size: 2rem;
+            opacity: 0;
+        }
+        .opacity{
+            opacity: 1;
+        }
+        
+        @media screen and (max-width: 450px){
+            .imgContainer:last-child, .imgContainer:nth-last-child(2){
+                display: none;
+            }
+        }
+
+        @media screen and (height> 1080px){
+            .imgContainer{
+                height: 70%;
+            }
+        }
